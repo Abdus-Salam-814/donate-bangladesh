@@ -145,37 +145,35 @@
             </div>
             <div class="card-body lg:w-1/2 w-full">
               <div class="">
-                <button class="btn"><span><img src="./assets/coin.png" alt=""></span> <span id="noakhali-amount">0</span> <span>BDT</span> </button>
+                <button class="btn"><span><img src="./assets/coin.png" alt=""></span> <span id="quota-amount">0</span> <span>BDT</span> </button>
               </div>
-              <h2 class="card-title text-lg font-bold ">Donate for Flood at Noakhali, Bangladesh</h2>
-              <p class="text-des-tex font-light">Devastating floods in Noakhali, Bangladesh, have left countless families homeless and in desperate need of help. Your donation can provide vital supplies like food, clean water, clothing, and shelter to those affected. Together, we can support relief efforts, rebuild lives, and bring hope to those in need. Every contribution makes a difference. Join us in making an impact today.</p>
+              <h2 class="card-title text-lg font-bold ">Aid for Injured in the Quota Movement</h2>
+              <p class="text-des-tex font-light">Support those injured during the Quota Movement as they recover and rebuild their lives. Your aid can provide essential medical treatment, rehabilitation, and financial assistance to those affected. Together, we can stand in solidarity, offer hope, and make a meaningful impact on their journey toward healing. Every contribution counts. Join us today to make a difference for the injured.</p>
 
-              <input id="noakhaliFild" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/>
+              <input id="quota-fild" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/>
 
-              <button onclick="donateNoakhali()" class="btn bg-first-btn">Donate</button>
+              <button onclick="donateQuota()" class="btn bg-first-btn">Donate</button>
              
             </div>
           </div>
-          <div class="card border-2 border-gray-200 lg:card-side bg-base-100 shadow-xl">
-            <div class="lg:w-1/2 w-full">
-              
-                <img class="p-8 w-full lg:w-3/4"
-                  src="./assets/noakhali.png"
-                  alt="Album" />
-            </div>
-            <div class="card-body lg:w-1/2 w-full">
-              <div class="">
-                <button class="btn"><span><img src="./assets/coin.png" alt=""></span> <span id="noakhali-amount">0</span> <span>BDT</span> </button>
-              </div>
-              <h2 class="card-title text-lg font-bold ">Donate for Flood at Noakhali, Bangladesh</h2>
-              <p class="text-des-tex font-light">Devastating floods in Noakhali, Bangladesh, have left countless families homeless and in desperate need of help. Your donation can provide vital supplies like food, clean water, clothing, and shelter to those affected. Together, we can support relief efforts, rebuild lives, and bring hope to those in need. Every contribution makes a difference. Join us in making an impact today.</p>
+        
+          <!-- Modal section  -->
 
-              <input id="noakhaliFild" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/>
+          <!-- Open the modal using ID.showModal() method -->
 
-              <button onclick="donateNoakhali()" class="btn bg-first-btn">Donate</button>
-             
-            </div>
-          </div>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
         </section>
         <!-- Donetion Section Ends here  -->
 

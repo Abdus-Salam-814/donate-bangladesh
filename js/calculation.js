@@ -1,5 +1,10 @@
 function calculateInitialBalance(initialElement, initialBalance, inputBalance){
 //    console.log(initialBalance, inputBalance);
+
+if(inputBalance > 0){
+    my_modal_5.showModal();
+}
+
 const initialAmount = initialBalance - inputBalance;
 console.log(initialAmount)
 initialElement.innerText = initialAmount;
@@ -112,34 +117,34 @@ historyContainer.appendChild(div);
 
 }
 
-function donateFeni(){
-    const feniDonateElement =  document.getElementById('feni-fild');
+function donateQuota(){
+    const quotaDonateElement =  document.getElementById('quota-fild');
 
-    const feniDonateElementString = feniDonateElement.value;
-    const feniDonateNumber = parseFloat(feniDonateElementString)
+    const quotaDonateElementString = quotaDonateElement.value;
+    const quotaDonateNumber = parseFloat(quotaDonateElementString)
     
     const initialBalanceElement = document.getElementById('initial-balance');
     const initialBalanceElementString = initialBalanceElement.innerText;
     const initialBalance = parseFloat(initialBalanceElementString);
 
-    const feniDonateAmountElement = document.getElementById('feni-amount')
-    const feniDonateAmountElementString = feniDonateAmountElement.innerText;
-    const feniDonateOldAmount = parseFloat(feniDonateAmountElementString)
+    const quotaDonateAmountElement = document.getElementById('quota-amount')
+    const quotaDonateAmountElementString = quotaDonateAmountElement.innerText;
+    const quotaDonateOldAmount = parseFloat(quotaDonateAmountElementString)
 
-if(isNaN(feniDonateNumber) === true || feniDonateNumber < 0  ){
+if(isNaN(quotaDonateNumber) === true || quotaDonateNumber < 0  ){
     alert('This is invalid amount')
-}else if(initialBalance <= 0 || initialBalance < feniDonateNumber){
+}else if(initialBalance <= 0 || initialBalance < quotaDonateNumber){
     alert('Your initial Balance Is Low');
 }else{
 
 
-    calculateInitialBalance(initialBalanceElement, initialBalance, feniDonateNumber)
-const feniDonateAmount = feniDonateOldAmount + feniDonateNumber;
+    calculateInitialBalance(initialBalanceElement, initialBalance, quotaDonateNumber)
+const quotaDonateAmount = quotaDonateOldAmount + quotaDonateNumber;
 
 
-feniDonateAmountElement.innerText = feniDonateAmount;
+quotaDonateAmountElement.innerText = quotaDonateAmount;
 
-feniDonateElement.value = ''
+quotaDonateElement.value = ''
 
 const historyContainer = document.getElementById('history-section')
 
@@ -150,7 +155,7 @@ const div = document.createElement('div');
 
 div.innerHTML = `  <div class="card  border-2  border-gray-200 text-left shadow-xl">
 <div class="card-body">
-  <h2 class="card-title"> <span>${feniDonateNumber}</span> <span> Taka is Donate for Flood Relief in Feni,Bangladesh</span> </h2>
+  <h2 class="card-title"> <span>${quotaDonateNumber}</span> <span> Taka is Aid for Injured in the Quota Movement</span> </h2>
   <p>Date: ${now}</p>
   
 </div>
