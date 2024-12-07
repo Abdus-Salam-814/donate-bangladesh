@@ -4,10 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
-</head>
-<body>
 
-    <h1>Welcome to my Web World</h1>
+    <!-- Tailwind Css link Added -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Font Link  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+ <!-- Coustom CSS link -->
+ <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'first-btn': '#B4F461',
+            'nav': '#F9F7F3',
+           'third-btn': 'rgba(171, 239, 95, 0.50)',
+            'text-color-1': '#494949',
+            'text-balack-btn': '#212121',
+            'concept': '#E7C1D3',
+            'design': '#EFDA6E',
+            'supervision': '#A4DAC3',
+            'budget': '#77AAEA',
+            'works-btn': '#ABEF5F33',
+            'footer-text': '#737373',
+            'footer-manu': '#E9E9E9',
+            'portfolio': 'rgba(171, 239, 95, 0.20)',
+          },
+          fontFamily:{
+            manrope:  '"Manrope", sans-serif',
+            lexend : '"Lexend", sans-serif',
+
+          },
+          backgroundImage: {
+              'hero-bg-img': "url('./assets/bg.jpg')",
+              'drawing-bg-img': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/client.jpg')",
+            }
+          }
+        }
+      }
+    </script>
+
+
+</head>
+<body class="font-lexend">
+
+    <!-- NavBar Started here -->
+    <nav class="bg-nav container mx-auto">
+        <div class="navbar px-6">
+            <div class="navbar-start">
+             
+                <button class="btn bg-first-btn py-3 px-8">Blog</button>
+            </div>
+            <div class="navbar-center lg:flex">
+              <ul class="menu menu-horizontal px-1 flex justify-center items-center">
+                <li><a><img class="w-full" src="./assets/logo.png" alt=""></a></li>
+                
+                <li class="text-xl font-bold"><a>Donate Bangladesh</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+             <ul class="flex justify-center items-center gap-4">
+                <li><img src="./assets/coin.png" alt=""></li>
+                <li class="text-xl"> <span>6700</span> <span>BDT</span> </li>
+             </ul>
+            </div>
+          </div>
+    </nav>
+    <!-- NavBar Ends here -->
     
+    
+
+  
+
 </body>
 </html>
