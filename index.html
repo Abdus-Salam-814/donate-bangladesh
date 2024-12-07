@@ -24,7 +24,7 @@
             'first-btn': '#B4F461',
             'nav': '#F9F7F3',
            'third-btn': 'rgba(171, 239, 95, 0.50)',
-            'text-color-1': '#494949',
+            'des-tex': 'rgba(17, 17, 17, 0.70)',
             'text-balack-btn': '#212121',
             'concept': '#E7C1D3',
             'design': '#EFDA6E',
@@ -53,7 +53,8 @@
 </head>
 <body class="font-lexend">
 
-    <!-- NavBar Started here -->
+    <header class="sticky top-0">
+          <!-- NavBar Started here -->
     <nav class="bg-nav container mx-auto">
         <div class="navbar px-6">
             <div class="navbar-start">
@@ -76,10 +77,65 @@
           </div>
     </nav>
     <!-- NavBar Ends here -->
+
+    <!-- Donetion and History Button Aria -->
+
+    <div class="flex justify-center items-center gap-4 my-8">
+        <button id="donate-btn" class="btn bg-first-btn font-semibold text-xl text-black ">Donation</button>
+        <button id="history-btn" class="btn  font-medium text-xl text-black ">History</button>
+    </div>
+    
+    </header>
+
+
+    <!-- Started main Section Started here -->
+    <main class="container mx-auto ">
+
+        <!-- Donetion Section Started here  -->
+
+        <section id="donetion-section" class="px-16">
+          <div class="card border-2 border-gray-200 lg:card-side bg-base-100 shadow-xl">
+            <div class="md:w-1/2">
+              
+                <img class="p-8 w-3/4"
+                  src="./assets/noakhali.png"
+                  alt="Album" />
+            </div>
+            <div class="card-body md:w-1/2">
+              <div class="">
+                <button class="btn"><span><img src="./assets/coin.png" alt=""></span> <span>0</span> <span>BDT</span> </button>
+              </div>
+              <h2 class="card-title text-lg font-bold ">Donate for Flood at Noakhali, Bangladesh</h2>
+              <p class="text-des-tex font-light">Devastating floods in Noakhali, Bangladesh, have left countless families homeless and in desperate need of help. Your donation can provide vital supplies like food, clean water, clothing, and shelter to those affected. Together, we can support relief efforts, rebuild lives, and bring hope to those in need. Every contribution makes a difference. Join us in making an impact today.</p>
+
+              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/>
+
+              <button class="btn bg-first-btn">Donate</button>
+             
+            </div>
+          </div>
+        </section>
+        <!-- Donetion Section Ends here  -->
+
+        <!-- History Section Started here  -->
+
+        <section id="history-section" class="hidden">
+          <h1>history</h1>
+        </section>
+        <!-- History Section Ends here  -->
+
+
+    </main>
+    <!-- Started main Section Endes here -->
+
+
+  
     
     
 
   
+    <!-- Js File Conect here  -->
+    <script src="./js/donetion-and-history.js"></script>
 
 </body>
 </html>
