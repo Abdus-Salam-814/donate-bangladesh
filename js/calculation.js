@@ -25,7 +25,7 @@ function donateNoakhali(){
     const noakhaliDonateAmountElementString = noakhaliDonateAmountElement.innerText;
     const noakhaliDonateOldAmount = parseFloat(noakhaliDonateAmountElementString)
 
-if(isNaN(noakhaliDonateNumber) === true || noakhaliDonateNumber < 0  ){
+if(isNaN(noakhaliDonateNumber) === true || noakhaliDonateNumber <= 0  ){
     alert('This is invalid amount')
 }else if(initialBalance <= 0 || initialBalance < noakhaliDonateNumber){
     alert('Your initial Balance Is Low');
@@ -78,7 +78,7 @@ function donateFeni(){
     const feniDonateAmountElementString = feniDonateAmountElement.innerText;
     const feniDonateOldAmount = parseFloat(feniDonateAmountElementString)
 
-if(isNaN(feniDonateNumber) === true || feniDonateNumber < 0  ){
+if(isNaN(feniDonateNumber) === true || feniDonateNumber <= 0  ){
     alert('This is invalid amount')
 }else if(initialBalance <= 0 || initialBalance < feniDonateNumber){
     alert('Your initial Balance Is Low');
@@ -131,7 +131,7 @@ function donateQuota(){
     const quotaDonateAmountElementString = quotaDonateAmountElement.innerText;
     const quotaDonateOldAmount = parseFloat(quotaDonateAmountElementString)
 
-if(isNaN(quotaDonateNumber) === true || quotaDonateNumber < 0  ){
+if(isNaN(quotaDonateNumber) === true || quotaDonateNumber <= 0  ){
     alert('This is invalid amount')
 }else if(initialBalance <= 0 || initialBalance < quotaDonateNumber){
     alert('Your initial Balance Is Low');
